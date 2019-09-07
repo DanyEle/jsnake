@@ -20,8 +20,8 @@ public class RunSnake
 	
 	public static void main(String[] args)
 	{
-		  //the root of all evils
-		  RootPanel rootPanel = new RootPanel();
+		//the root of all evils
+		RootPanel rootPanel = new RootPanel();
           JFrame frame = new JFrame("JSnake - Have fun!");
           frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
           //center the application upon starting
@@ -30,7 +30,7 @@ public class RunSnake
           double height = screenSize.getHeight();
           frame.setLocation(((int)(width - 600) / 2), (int)((height - 600) / 2));
           //little top menu with some buttons
-          new TopMenu(frame);
+          TopMenu topMenu = new TopMenu(frame);
           //pack it up and get it ready to go
           frame.add(rootPanel);
           frame.getContentPane();
